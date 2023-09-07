@@ -7,30 +7,35 @@ let playScissor = document.getElementById("playScissor")
 let winComp = document.getElementById("compWin")
 let game = ["paper", "rock", "scissor"]
 
-playPaper.addEventListener('click', function () {
-    for (let i=0; i<  game.length; i++){
-        let randomIndex= Math.floor(Math.random()*game.length);
-        randomObject= game[randomIndex]
 
-        if (randomObject== "paper"){
+
+    let randomIndex= Math.floor(Math.random()*game.length);
+    randomObject= game[randomIndex]
+    console.log (randomObject)
+
+
+playPaper.addEventListener('click', function (e) {
+    e.preventDefault();
+    
+        if (randomObject === "paper"){
             winComp.hidden= false
             winComp.innerHTML= "IT'S A TIE!"
-            comPaper.style.backgroundColor= "blue"
-            playPaper.style.backgroundColor= "red"
+            comPaper.style.backgroundColor=  "#ffb6d7"
+            playPaper.style.backgroundColor= "#ffddf0"
             
-        }else if (randomObject == "rock" ){
+        }else if (randomObject === "rock" ){
             winComp.hidden= false
             winComp.innerHTML= "YOU WIN!"
-            comRock.style.backgroundColor= "blue"
-            playPaper.style.backgroundColor= "red"
+            comRock.style.backgroundColor=  "#ffb6d7"
+            playPaper.style.backgroundColor= "#ffddf0"
 
-        }else if (randomObject == "scissor" ){
+        }else if (randomObject === "scissor" ){
             winComp.hidden= false
             winComp.innerHTML= "COMPUTER WINS!"
-            comScissor.style.backgroundColor= "blue"
-            playPaper.style.backgroundColor= "red"
+            comScissor.style.backgroundColor=  "#ffb6d7"
+            playPaper.style.backgroundColor= "#ffddf0"
         }
-    }
+    
 
 
     
@@ -38,61 +43,59 @@ playPaper.addEventListener('click', function () {
 });
 
 
-playRock.addEventListener('click', function() {
-    for (let i=0; i<  game.length; i++){
-        let randomIndex= Math.floor(Math.random()*game.length);
-        randomObject= game[randomIndex]
+playRock.addEventListener('click', function(e) {
+    e.preventDefault()
+    
 
-        if (randomObject== "rock"){
+        if (randomObject=== "rock"){
             winComp.hidden= false
             winComp.innerHTML= "IT'S A TIE!"
-            comRock.style.backgroundColor= "blue"
-            playRock.style.backgroundColor= "red"
+            comRock.style.backgroundColor= "#ffb6d7"
+            playRock.style.backgroundColor= "#ffddf0"
 
-        }else if (randomObject == "scissor" ){
+        } if (randomObject === "scissor" ){
             winComp.hidden= false
             winComp.innerHTML= "YOU WIN!"
-            comScissor.style.backgroundColor= "blue"
-            playRock.style.backgroundColor= "red"
-        }else if (randomObject == "paper" ){
+            comScissor.style.backgroundColor= "#ffb6d7"
+            playRock.style.backgroundColor= "#ffddf0"
+        }else if (randomObject === "paper" ){
             winComp.hidden= false
             winComp.innerHTML= "COMPUTER WINS!"
-            playRock.style.backgroundColor= "red"
-            comPaper.style.backgroundColor= "blue"
+            playRock.style.backgroundColor= "#ffddf0"
+            comPaper.style.backgroundColor= "#ffb6d7"
    
         }
 
 
    
-        }
+        
             console.log (randomObject)
 })
-playScissor.addEventListener('click', function() {
-    for (let i=0; i<  game.length; i++){
-        let randomIndex= Math.floor(Math.random()*game.length);
-        randomObject= game[randomIndex]
+playScissor.addEventListener('click', function(e) {
+    e.preventDefault()
+   
 
-        if (randomObject== "scissor"){
+        if (randomObject=== "scissor"){
             winComp.hidden= false
             winComp.innerHTML= "IT'S A TIE!"
-            playScissor.style.backgroundColor= "red"
-            comScissor.style.backgroundColor= "blue"
-        }else if (randomObject == "paper" ){
+            playScissor.style.backgroundColor= "#ffddf0"
+            comScissor.style.backgroundColor= "#ffb6d7"
+        }else if (randomObject === "paper" ){
             winComp.hidden= false
-            winComp.innerHTML= "COMPUTER LOSES!"
-            playScissor.style.backgroundColor= "red"
-            comPaper.style.backgroundColor= "blue"
-        }else if (randomObject == "rock" ){
+            winComp.innerHTML= "YOU WIN!"
+            playScissor.style.backgroundColor= "#ffddf0"
+            comPaper.style.backgroundColor= "#ffb6d7"
+        }else if (randomObject === "rock" ){
             winComp.hidden= false
             winComp.innerHTML= "COMPUTER WINS!"
-            playScissor.style.backgroundColor= "red"
-            comRock.style.backgroundColor= "blue"
+            playScissor.style.backgroundColor= "#ffddf0"
+            comRock.style.backgroundColor= "#ffb6d7"
    
         }
 
 
    
-        }
+        
             console.log (randomObject)
     
 })

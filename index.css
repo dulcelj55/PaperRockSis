@@ -1,0 +1,58 @@
+
+body{
+    /* background-image: url(./images/PRS.jpeg) */
+    background-color:hotpink ;
+}
+h1{
+    text-align: center;
+    margin-top: 90px;
+}
+
+#computer{
+   
+    text-align : center;
+
+}
+#player1{
+   
+    text-align: center;
+
+}
+#comRock{
+    background-color:  rgb(161, 122, 161);
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+}
+#comPaper{
+    background-color: rgb(161, 122, 161);
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+}
+#comScissor{
+    background-color:  rgb(161, 122, 161);
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+}
+
+#playRock{
+    background-color: #bffdff  ;
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+}
+#playPaper{
+    background-color: #bffdff  ;
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+}
+#playScissor{
+    background-color: #bffdff  ;
+    padding: 40px;
+    font-size: xx-large;
+    border-radius: 15%;
+    
+}
